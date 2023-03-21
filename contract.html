@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <article>Contract Me
+        <p>I'd really like to hear from you!</p>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>
+                <p>
+                    <label for="FirstName">First Name:</label>
+                    <input type="text" name="FirstName" id="FirstName" placeholder="First Name" autocomplete="on"
+                        autofocus>
+                </p>
+                <p>
+                    <label for="LastName">Last Name:</label>
+                    <input type="text" name="LastName" id="LastName" placeholder="Last Name" autocomplete="on">
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="password">
+                </p>
+                <p>
+                    <label for="tel">Phone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Phone Number" pattern="[0-9]{3}[0-3]{3}[0-9]{4}"
+                        required>
+                </p>
+                <p>
+                    <label for="yearOfBrith">Year Of Brith:</label>
+                    <input type="number" name="yearOfBrith" id="yearOfBrith" min="1990" max="2023" step="10"
+                        value="2000">
+                </p>
+                <p>
+                    <label for="coffee">Coffee Favorite:</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Coffees">
+                            <option value="iced coffee">iced coffee</option>
+                        </optgroup>
+                        <optgroup label="Expresso Drink">
+                            <option value="Latte">Latte</option>
+                            <option value="cappuccino">cappuccino</option>
+                            <option value="americano">americano</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend> what is your favorite food?</legend>
+                <p>
+                    <input type="radio" name="food" id="food" value="kfc">
+                    <label for="kfc">KFC</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="pizza" value="pizza">
+                    <label for="pizza">PIZZA</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="other" value="kfc">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Do you have pet?</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="dog" values="dog">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="cat" values="cat">
+                    <label for="cat">Cat</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="Fish" values="Fish">
+                    <label for="Fish">Fish</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="Other" values="Other">
+                    <label for="Other">Other</label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Sent Me</legend>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </fieldset>
+            <input type="submit" value="submit">
+            <input type="reset" value="clear">
+        </form>
+    </article>
+</body>
+
+</html>
